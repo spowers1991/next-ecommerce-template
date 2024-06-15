@@ -1,0 +1,39 @@
+{
+  "name": "stevenpowers.co.uk",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@storyblok/react": "^1.0.3",
+    "autoprefixer": "10.4.14",
+    "eslint-config-next": "^13.5.4",
+    "next": "13.4.9",
+    "nodemailer": "^6.9.6",
+    "postcss": "8.4.23",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-intersection-observer": "^9.10.0",
+    "react-responsive": "^9.0.2",
+    "react-tooltip": "^5.26.3",
+    "storyblok-js-client": "^6.7.3",
+    "storyblok-rich-text-react-renderer": "^2.9.0",
+    "swiper": "^10.3.1",
+    "tailwindcss": "3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.4",
+    "postcss": "^8",
+    "tailwindcss": "^3",
+    "typescript": "^5"
+  }
+}
