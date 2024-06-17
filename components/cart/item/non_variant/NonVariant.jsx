@@ -4,28 +4,27 @@ import Details from '../Details';
 import QuantityPrice from '@/components/cart/helpers/QuantityPrice';
 import QuantitySelector from '@/components/cart/selectors/QuantitySelector';
 
-const Single = ({ type, variant, product }) => {
+const Single = ({ type, product }) => {
   const { updateItem } = useCart();
 
   return (
-    <div key={variant?.id} className="flex flex-col border-b pb-8">
+    <div key={product?.id} className="flex flex-col border-b pb-8">
       <div className="flex justify-between items-center">
         <div className="flex flex-col">
           <Details
-            title={variant?.node?.title}
-            colour={variant?.node?.selectedOptions && variant?.node?.selectedOptions[1].value}
+            title={product?.title}
           />
           <QuantityPrice
-            quantity={variant?.node?.quantity}
-            price={variant?.node?.price}
+            quantity={product?.quantity}
+            price={product?.price}
           />
         </div>
         <QuantitySelector
-          quantity={variant?.node?.quantity}
+          quantity={product?.quantity}
           handleQuantityChange={(event) => {
             const newQuantity = parseInt(event.target.value, 10);
-            const selectedVariantId = type === 'single' ? null : variant.node?.id;
-            updateItem(product, newQuantity, selectedVariantId);
+            const selectedproductId = type === 'single' ? null : product?.id;
+            updateItem(product, newQuantity, selectedproductId);
           }}
         />
       </div>

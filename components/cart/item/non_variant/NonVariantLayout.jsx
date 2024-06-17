@@ -1,11 +1,10 @@
 import React from 'react';
-import Variant from '../Variant';
+import NonVariant from '@/components/cart/item/non_variant/NonVariant';
 
 const SingleLayout = ({ product }) => (
-  <Variant
+  <NonVariant
     type="single"
     product={product}
-    variant={null}
   />
 );
 

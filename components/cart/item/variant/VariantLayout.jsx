@@ -1,5 +1,5 @@
 import React from 'react';
-import Variant from '../Variant';
+import Variant from '@/components/cart/item/variant/Variant';
 
 const VariantLayout = ({ product }) => (
   <div className='flex flex-col gap-y-8'>
