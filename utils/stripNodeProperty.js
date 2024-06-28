@@ -1,8 +1,13 @@
 const stripNodeProperty = (products) => {
-    return products.map(({ node, ...rest }) => ({
-      ...node,
-      ...rest, // Spread any other properties from the product if needed
-    }));
-  };
+  // Check if products is an array before mapping
+  if (!Array.isArray(products)) {
+    return [];
+  }
 
-  export default stripNodeProperty
+  return products.map(({ node, ...rest }) => ({
+    ...node,
+    ...rest, // Spread any other properties from the product if needed
+  }));
+};
+
+export default stripNodeProperty;

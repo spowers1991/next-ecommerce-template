@@ -1,6 +1,6 @@
 import Meta from '@/utils/Meta'
 import SEO from '@/data/meta/seo/defaultSEO'
-import ProductListings from '@/components/products/listings/ProductListings'
+import FilteredListing from '@/components/products/listings/FilteredListing/Index'
 
 export default function Home({ products }) {
 
@@ -8,7 +8,7 @@ export default function Home({ products }) {
     <>
       <Meta seo={SEO} />
       <div className="container flex m-auto w-full pt-4">
-          <ProductListings products={products} />        
+          <FilteredListing products={products} />        
       </div>
     </>
   );
