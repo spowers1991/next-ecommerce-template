@@ -10,11 +10,11 @@ function ProductListing({ products }) {
 
   return (
     <FilterProvider products={sanitizedProducts}>
-      <div className='w-full flex flex-col lg:flex-row px-4 mx-auto gap-4'>
-        <div className='w-1/4'>
+      <div className='w-full flex flex-col md:flex-row lg:flex-row px-4 mx-auto gap-4'>
+        <div className='w-full md:w-1/4'>
           <FilterWidget />
         </div>
-        <div className='w-3/4'>
+        <div className='w-full md:w-3/4'>
           <Listing sanitizedProducts={sanitizedProducts} />
         </div>
       </div>

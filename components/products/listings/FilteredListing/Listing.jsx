@@ -9,7 +9,7 @@ function FilteredListing() {
 
   return (
     filteredProducts.length > 0 ?
-        <div className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8">
+        <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-8">
             {filteredProducts.map((product, index) => (
                 <ProductProvider key={index} product={product}>
                     <ProductCard />
