@@ -10,7 +10,7 @@ function Product() {
   const { product, selectedVariant} = useProduct();
 
   return (
-      <div className="container m-auto md:mt-12">
+      <div className="container m-auto md:mt-16">
         <div className="flex flex-col w-full gap-6 px-0 md:px-4">
           <div className="flex flex-col md:flex-row gap-12">
             <div className="md:w-1/2 w-full">

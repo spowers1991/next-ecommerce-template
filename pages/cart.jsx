@@ -8,7 +8,7 @@ export default function Home({ products }) {
   return (
     <>
       <Meta seo={SEO} />
-      <div className="container flex m-auto w-full p-4 sm:!pt-6">
+      <div className="container flex m-auto w-full p-4 sm:!pt-16">
           <CartTable products={products} />        
       </div>
     </>
