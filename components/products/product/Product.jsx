@@ -1,6 +1,6 @@
 import { useProduct } from '@/lib/contexts/product/ProductContext';
 import FeaturedImage from "@/components/products/product/FeaturedImage";
-import Heading from "@/components/html_tags/Heading";
+import Heading from "@/utils/Heading";
 import Description from "@/components/products/product/Description";
 import Price from "@/components/products/product/Price";
 import AddToCartForm from '@/components/cart/actions/AddToCartForm';

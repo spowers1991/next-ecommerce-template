@@ -7,8 +7,6 @@ import { getFilterOptions } from '@/lib/contexts/filter/helpers/getFilterOptions
 const CheckboxSelector = ({ propertyName }) => {
   const { products, filterOptions, setFilterOptions, selectedOptions, setSelectedOptions } = useFilter();
 
-  //console.log(options)
-
   useEffect(() => {
    updateFilterOptions(propertyName, getFilterOptions(products, propertyName), setFilterOptions);
   }, [products, setFilterOptions]);
@@ -25,7 +23,7 @@ const CheckboxSelector = ({ propertyName }) => {
           <input
             type="checkbox"
             id={option.id}
-            name="category"
+            name={option.id}
             value={option.id}
             checked={selectedOptions[propertyName]?.includes(option.id) || false} // Ensure it is always a boolean
             onChange={handleChange}
