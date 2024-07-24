@@ -14,11 +14,11 @@ import Footer from '@/components/layout/Footer'
 function App({ Component, pageProps, products }) {
   return (
     <>
-    <CartProvider>
-      <Header />
-        <Component {...pageProps} products={products} />
-      <Footer />
-    </CartProvider>
+      <CartProvider>
+        <Header />
+          <Component {...pageProps} products={products} />
+        <Footer />
+      </CartProvider>
     </>
   )
 }

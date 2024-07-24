@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import SearchBar from '@/components/filter/selectors/SearchBar';
 import CheckboxSelector from '@/components/filter/selectors/CheckboxSelector';
 import FilterSubmit from '@/components/filter/actions/FilterSubmit';
 
-const FilterWidget = () => {
+const Filters = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () => {
@@ -19,12 +20,13 @@ const FilterWidget = () => {
       </button>
       <div className={`overflow-hidden transition-height duration-300 ease-in-out ${isOpen ? 'max-h-screen' : 'max-h-0 lg:max-h-screen'}`}>
         <div className="flex flex-col gap-y-4 mt-5 lg:mt-0 ">
-          <CheckboxSelector propertyName={'collections'} />
-          <CheckboxSelector propertyName={'variants'} />
+          <SearchBar propertyName={'title'} searchTerm={'title'} />
+          <CheckboxSelector propertyName={'collections'} searchTerm={'title'} />
+          <CheckboxSelector propertyName={'variants'} searchTerm={'title'} />
         </div>
       </div>
     </div>
   );
 };
 
-export default FilterWidget;
+export default Filters;

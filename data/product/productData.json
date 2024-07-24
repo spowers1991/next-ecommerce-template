@@ -281,7 +281,7 @@
             ],
             "stock": {
               "available": false,
-              "quantity": 0
+              "quantity": 10
             }
           }
         },
@@ -394,22 +394,6 @@
             "stock": {
               "available": false,
               "quantity": 0
-            }
-          }
-        },
-        {
-          "node": {
-            "id": "variant9",
-            "title": "Large / Red",
-            "quantity": 0,
-            "price": "26.50",
-            "selectedOptions": [
-              { "name": "Size", "value": "Large" },
-              { "name": "Color", "value": "Red" }
-            ],
-            "stock": {
-              "available": false,
-              "quantity": 10
             }
           }
         }

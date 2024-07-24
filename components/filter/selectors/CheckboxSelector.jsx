@@ -4,11 +4,11 @@ import { updateFilterOptions } from '@/lib/contexts/filter/actions/updateFilterO
 import { updateCheckboxOptions } from '@/lib/contexts/filter/selectors/updateCheckboxOptions';
 import { getFilterOptions } from '@/lib/contexts/filter/helpers/getFilterOptions';
 
-const CheckboxSelector = ({ propertyName }) => {
+const CheckboxSelector = ({ propertyName, searchTerm }) => {
   const { products, filterOptions, setFilterOptions, selectedOptions, setSelectedOptions } = useFilter();
 
   useEffect(() => {
-   updateFilterOptions(propertyName, getFilterOptions(products, propertyName), setFilterOptions);
+   updateFilterOptions(propertyName, getFilterOptions(products, propertyName, searchTerm), setFilterOptions);
   }, [products, setFilterOptions]);
 
   const handleChange = (event) => {
@@ -22,13 +22,13 @@ const CheckboxSelector = ({ propertyName }) => {
         <div key={index} className='flex gap-x-1'>
           <input
             type="checkbox"
-            id={option.id}
-            name={option.id}
-            value={option.id}
-            checked={selectedOptions[propertyName]?.includes(option.id) || false} // Ensure it is always a boolean
+            id={option[searchTerm]}
+            name={option[searchTerm]}
+            value={option[searchTerm]}
+            checked={selectedOptions[propertyName]?.includes(option[searchTerm]) || false} // Ensure it is always a boolean
             onChange={handleChange}
           />
-          <label htmlFor={option.id}>{option.title}</label>
+          <label htmlFor={option[searchTerm]}>{option.title}</label>
         </div>
       ))}
     </div>
