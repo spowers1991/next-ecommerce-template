@@ -3,7 +3,7 @@
     "node": {
       "id": "1",
       "title": "Product 1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 1",
+      "description": "Description for Product 1.",
       "handle": "product-1",
       "quantity": 0,
       "price": "10.00",
@@ -34,14 +34,44 @@
           }
         }
       ],
+      "variants": [
+        {
+          "node": {
+            "id": "variant1",
+            "title": "Small / Black",
+            "quantity": 0,
+            "price": "12.00",
+            "selectedOptions": [
+              { "name": "Size", "value": "Small" },
+              { "name": "Color", "value": "Black" }
+            ],
+            "stock": {
+              "available": true,
+              "quantity": 5
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "variant2",
+            "title": "Medium / Black",
+            "quantity": 0,
+            "price": "14.00",
+            "selectedOptions": [
+              { "name": "Size", "value": "Medium" },
+              { "name": "Color", "value": "Black" }
+            ],
+            "stock": {
+              "available": true,
+              "quantity": 10
+            }
+          }
+        }
+      ],
       "seo": {
         "title": "Product 1",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 1",
+        "description": "Description for Product 1.",
         "keywords": "product, ecommerce, shop, Product 1"
-      },
-      "stock": {
-        "available": false,
-        "quantity": 5
       }
     }
   },
@@ -49,7 +79,7 @@
     "node": {
       "id": "2",
       "title": "Product 2",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 2",
+      "description": "Description for Product 2.",
       "handle": "product-2",
       "quantity": 0,
       "price": "20.00",
@@ -83,38 +113,6 @@
       "variants": [
         {
           "node": {
-            "id": "variant1",
-            "title": "Small / White",
-            "quantity": 0,
-            "price": "22.00",
-            "selectedOptions": [
-              { "name": "Size", "value": "Small" },
-              { "name": "Color", "value": "White" }
-            ],
-            "stock": {
-              "available": false,
-              "quantity": 10
-            }
-          }
-        },
-        {
-          "node": {
-            "id": "variant2",
-            "title": "Medium / White",
-            "quantity": 0,
-            "price": "24.00",
-            "selectedOptions": [
-              { "name": "Size", "value": "Medium" },
-              { "name": "Color", "value": "White" }
-            ],
-            "stock": {
-              "available": false,
-              "quantity": 10
-            }
-          }
-        },
-        {
-          "node": {
             "id": "variant3",
             "title": "Large / White",
             "quantity": 0,
@@ -176,13 +174,57 @@
               "quantity": 4
             }
           }
+        }
+      ],
+      "seo": {
+        "title": "Product 2",
+        "description": "Description for Product 2.",
+        "keywords": "product, ecommerce, shop, Product 2"
+      }
+    }
+  },
+  {
+    "node": {
+      "id": "3",
+      "title": "Product 3",
+      "description": "Description for Product 3.",
+      "handle": "product-3",
+      "quantity": 0,
+      "price": "30.00",
+      "collections": [
+        {
+          "node": {
+            "id": "collection2",
+            "handle": "category2",
+            "title": "Category 2"
+          }
         },
+        {
+          "node": {
+            "id": "collection3",
+            "handle": "category3",
+            "title": "Category 3"
+          }
+        }
+      ],
+      "images": [
+        {
+          "node": {
+            "id": "image3",
+            "originalSrc": "https://placehold.co/600x400",
+            "height": 100,
+            "width": 100,
+            "altText": "Image 3"
+          }
+        }
+      ],
+      "variants": [
         {
           "node": {
             "id": "variant7",
             "title": "Small / Red",
             "quantity": 0,
-            "price": "22.50",
+            "price": "32.00",
             "selectedOptions": [
               { "name": "Size", "value": "Small" },
               { "name": "Color", "value": "Red" }
@@ -198,7 +240,7 @@
             "id": "variant8",
             "title": "Medium / Red",
             "quantity": 0,
-            "price": "24.50",
+            "price": "34.00",
             "selectedOptions": [
               { "name": "Size", "value": "Medium" },
               { "name": "Color", "value": "Red" }
@@ -214,7 +256,7 @@
             "id": "variant9",
             "title": "Large / Red",
             "quantity": 0,
-            "price": "26.50",
+            "price": "36.00",
             "selectedOptions": [
               { "name": "Size", "value": "Large" },
               { "name": "Color", "value": "Red" }
@@ -227,181 +269,147 @@
         }
       ],
       "seo": {
-        "title": "Product 2",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 2",
-        "keywords": "product, ecommerce, shop, Product 2"
+        "title": "Product 3",
+        "description": "Description for Product 3.",
+        "keywords": "product, ecommerce, shop, Product 3"
       }
     }
   },
   {
     "node": {
-      "id": "3",
-      "title": "Product 3",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 2",
-      "handle": "product-3",
+      "id": "4",
+      "title": "Product 4",
+      "description": "Description for Product 4.",
+      "handle": "product-4",
       "quantity": 0,
-      "price": "20.00",
+      "price": "40.00",
       "collections": [
         {
           "node": {
-            "id": "collection1",
-            "handle": "category1",
-            "title": "Category 1"
-          }
-        },
-        {
-          "node": {
-            "id": "collection3",
-            "handle": "category3",
-            "title": "Category 3"
+            "id": "collection4",
+            "handle": "category4",
+            "title": "Category 4"
           }
         }
       ],
       "images": [
         {
           "node": {
-            "id": "image2",
+            "id": "image4",
             "originalSrc": "https://placehold.co/600x400",
             "height": 100,
             "width": 100,
-            "altText": "Image 2"
+            "altText": "Image 4"
           }
         }
       ],
       "variants": [
         {
           "node": {
-            "id": "variant1",
-            "title": "Small / White",
+            "id": "variant10",
+            "title": "Small / Yellow",
             "quantity": 0,
-            "price": "22.00",
+            "price": "42.00",
             "selectedOptions": [
               { "name": "Size", "value": "Small" },
-              { "name": "Color", "value": "White" }
+              { "name": "Color", "value": "Yellow" }
             ],
             "stock": {
-              "available": false,
+              "available": true,
+              "quantity": 5
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "variant11",
+            "title": "Medium / Yellow",
+            "quantity": 0,
+            "price": "44.00",
+            "selectedOptions": [
+              { "name": "Size", "value": "Medium" },
+              { "name": "Color", "value": "Yellow" }
+            ],
+            "stock": {
+              "available": true,
               "quantity": 10
-            }
-          }
-        },
-        {
-          "node": {
-            "id": "variant2",
-            "title": "Medium / White",
-            "quantity": 0,
-            "price": "24.00",
-            "selectedOptions": [
-              { "name": "Size", "value": "Medium" },
-              { "name": "Color", "value": "White" }
-            ],
-            "stock": {
-              "available": false,
-              "quantity": 0
-            }
-          }
-        },
-        {
-          "node": {
-            "id": "variant3",
-            "title": "Large / White",
-            "quantity": 0,
-            "price": "26.00",
-            "selectedOptions": [
-              { "name": "Size", "value": "Large" },
-              { "name": "Color", "value": "White" }
-            ],
-            "stock": {
-              "available": false,
-              "quantity": 4
-            }
-          }
-        },
-        {
-          "node": {
-            "id": "variant4",
-            "title": "Small / Blue",
-            "quantity": 0,
-            "price": "23.00",
-            "selectedOptions": [
-              { "name": "Size", "value": "Small" },
-              { "name": "Color", "value": "Blue" }
-            ],
-            "stock": {
-              "available": false,
-              "quantity": 4
-            }
-          }
-        },
-        {
-          "node": {
-            "id": "variant5",
-            "title": "Medium / Blue",
-            "quantity": 0,
-            "price": "25.00",
-            "selectedOptions": [
-              { "name": "Size", "value": "Medium" },
-              { "name": "Color", "value": "Blue" }
-            ],
-            "stock": {
-              "available": false,
-              "quantity": 0
-            }
-          }
-        },
-        {
-          "node": {
-            "id": "variant6",
-            "title": "Large / Blue",
-            "quantity": 0,
-            "price": "27.00",
-            "selectedOptions": [
-              { "name": "Size", "value": "Large" },
-              { "name": "Color", "value": "Blue" }
-            ],
-            "stock": {
-              "available": false,
-              "quantity": 0
-            }
-          }
-        },
-        {
-          "node": {
-            "id": "variant7",
-            "title": "Small / Red",
-            "quantity": 0,
-            "price": "22.50",
-            "selectedOptions": [
-              { "name": "Size", "value": "Small" },
-              { "name": "Color", "value": "Red" }
-            ],
-            "stock": {
-              "available": false,
-              "quantity": 4
-            }
-          }
-        },
-        {
-          "node": {
-            "id": "variant8",
-            "title": "Medium / Red",
-            "quantity": 0,
-            "price": "24.50",
-            "selectedOptions": [
-              { "name": "Size", "value": "Medium" },
-              { "name": "Color", "value": "Red" }
-            ],
-            "stock": {
-              "available": false,
-              "quantity": 4
             }
           }
         }
       ],
       "seo": {
-        "title": "Product 3",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 2",
-        "keywords": "product, ecommerce, shop, Product 3"
+        "title": "Product 4",
+        "description": "Description for Product 4.",
+        "keywords": "product, ecommerce, shop, Product 4"
+      }
+    }
+  },
+  {
+    "node": {
+      "id": "5",
+      "title": "Product 5",
+      "description": "Description for Product 5.",
+      "handle": "product-5",
+      "quantity": 0,
+      "price": "50.00",
+      "collections": [
+        {
+          "node": {
+            "id": "collection5",
+            "handle": "category5",
+            "title": "Category 5"
+          }
+        }
+      ],
+      "images": [
+        {
+          "node": {
+            "id": "image5",
+            "originalSrc": "https://placehold.co/600x400",
+            "height": 100,
+            "width": 100,
+            "altText": "Image 5"
+          }
+        }
+      ],
+      "variants": [
+        {
+          "node": {
+            "id": "variant12",
+            "title": "Small / Green",
+            "quantity": 0,
+            "price": "52.00",
+            "selectedOptions": [
+              { "name": "Size", "value": "Small" },
+              { "name": "Color", "value": "Green" }
+            ],
+            "stock": {
+              "available": true,
+              "quantity": 5
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "variant13",
+            "title": "Medium / Green",
+            "quantity": 0,
+            "price": "54.00",
+            "selectedOptions": [
+              { "name": "Size", "value": "Medium" },
+              { "name": "Color", "value": "Green" }
+            ],
+            "stock": {
+              "available": true,
+              "quantity": 10
+            }
+          }
+        }
+      ],
+      "seo": {
+        "title": "Product 5",
+        "description": "Description for Product 5.",
+        "keywords": "product, ecommerce, shop, Product 5"
       }
     }
   }
