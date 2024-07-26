@@ -1,15 +1,16 @@
 import React from 'react';
+import { useCart } from '@/lib/contexts/cart/CartContext';
 
 const RemoveFromCartButton = (props) => {
+    const { removeFromCart } = useCart();
+
     return (   
-        <div className="flex w-full p-4 mt-auto">
-            <button
-                className="flex gap-x-3 ml-auto bg-red-500 py-2 px-3"
-                onClick={() => props.removeFromCart(props.index)}
-            >
-                <img src="/images/svgs/removeFromCartIcon.svg" />
-            </button>
-        </div>
+        <button
+            className={`${props.className} w-[65px] flex items-center gap-x-3 bg-red-500 border-2 border-red-500`}
+            onClick={() => removeFromCart(props.product, props.selectedVariantId)}
+        >
+            <img className="m-auto" src="/images/svgs/removeFromCartIcon.svg" />
+        </button>
     )
 }
 

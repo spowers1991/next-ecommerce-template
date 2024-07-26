@@ -18,7 +18,7 @@ const CartTable = () => {
           Shopping Cart 
         </Heading>
 
-        <div className="fixed sm:relative left-0 bottom-0 w-full" >
+        <div className="fixed sm:relative left-0 bottom-0 w-full z-20" >
           <CheckoutButton cart={cart}/>
         </div>
 
@@ -29,7 +29,7 @@ const CartTable = () => {
         </p>
       ) : (
         // Create a grid item for each of the cart items in the cart
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-4">
           {cart.map((product, index) => (
             <CartItem key={index} index={index} product={product} />
           ))}

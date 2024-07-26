@@ -5,8 +5,8 @@ import VariationSelector from '@/components/cart/selectors/VariationSelector';
 import QuantitySelector from '@/components/cart/selectors/QuantitySelector';
 import AddToCartButton from '@/components/cart/actions/AddToCartButton';
 
-const AddToCartForm = ({ className }) => {
-  const { product, selectedVariantId, setSelectedVariantId, getProductVariant } = useProduct();
+const AddToCartForm = ({ product, className }) => {
+  const { selectedVariantId, setSelectedVariantId, getProductVariant } = useProduct();
   const { addToCart } = useCart();
   const [quantity, setQuantity] = useState(1);
   const [addedToCart, setAddedToCart] = useState(false);

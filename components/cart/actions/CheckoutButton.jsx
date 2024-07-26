@@ -7,7 +7,7 @@ const { cart } = useCart();
 
  return (
     <button
-        className="h-full flex w-full xl:w-fit gap-x-3 bg-green-500 text-white py-2 px-4 cursor-pointer items-center  duration-150 pb-[9px] pt-[12px]  uppercase font-[500] text-xs !tracking-normal leading-[1]"
+        className="z-20 h-full flex w-full xl:w-fit md:max-w-[300px] gap-x-3 bg-green-500 text-white py-3 px-4 cursor-pointer items-center  duration-150 uppercase font-[500] text-xs !tracking-normal leading-[1]"
     >
         Proceed to Checkout
         <img className="ml-auto" src="/images/svgs/proceedToCheckoutIcon.svg"  />

@@ -125,7 +125,7 @@
             ],
             "stock": {
               "available": false,
-              "quantity": 0
+              "quantity": 4
             }
           }
         },
@@ -141,7 +141,7 @@
             ],
             "stock": {
               "available": false,
-              "quantity": 0
+              "quantity": 4
             }
           }
         },
@@ -157,7 +157,7 @@
             ],
             "stock": {
               "available": false,
-              "quantity": 0
+              "quantity": 4
             }
           }
         },
@@ -173,7 +173,7 @@
             ],
             "stock": {
               "available": false,
-              "quantity": 0
+              "quantity": 4
             }
           }
         },
@@ -189,7 +189,7 @@
             ],
             "stock": {
               "available": false,
-              "quantity": 0
+              "quantity": 4
             }
           }
         },
@@ -205,7 +205,7 @@
             ],
             "stock": {
               "available": false,
-              "quantity": 0
+              "quantity": 4
             }
           }
         },
@@ -220,8 +220,8 @@
               { "name": "Color", "value": "Red" }
             ],
             "stock": {
-              "available": false,
-              "quantity": 0
+              "available": true,
+              "quantity": 1
             }
           }
         }
@@ -313,7 +313,7 @@
             ],
             "stock": {
               "available": false,
-              "quantity": 0
+              "quantity": 4
             }
           }
         },
@@ -329,7 +329,7 @@
             ],
             "stock": {
               "available": false,
-              "quantity": 0
+              "quantity": 4
             }
           }
         },
@@ -377,7 +377,7 @@
             ],
             "stock": {
               "available": false,
-              "quantity": 0
+              "quantity": 4
             }
           }
         },
@@ -393,7 +393,7 @@
             ],
             "stock": {
               "available": false,
-              "quantity": 0
+              "quantity": 4
             }
           }
         }

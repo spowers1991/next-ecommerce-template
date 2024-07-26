@@ -1,0 +1,2 @@
+1. "Added to cart" indicator. (Use Cart Context)
+2. 
